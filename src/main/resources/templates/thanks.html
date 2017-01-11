@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Thank You</title>
+</head>
+<body action="#" th:action="@{'thanks'}" method="get" id="projects">
+<h1>Projects</h1>
+<p>Early access of Greenfox Academy Zerda Raptor Projects with tech tags</p>
+<ul data-th-each="project : ${projects}">
+    <li th:text="#{project.projectname} + #{project.projecttype}"></li>
+</ul>
+</body>
+</html>
